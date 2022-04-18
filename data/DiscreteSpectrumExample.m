@@ -1,10 +1,10 @@
 
-numICs = 5000;
+numICs = 2^12; %number of trajectories
 filenamePrefix = 'DiscreteSpectrumExample';
 
 x1range = [-.5, .5];
 x2range = x1range;
-tSpan = 0:0.02:1;
+tSpan = linspace(0,1,2^6); %trajectory length
 mu = -0.05;
 lambda = -1;
 

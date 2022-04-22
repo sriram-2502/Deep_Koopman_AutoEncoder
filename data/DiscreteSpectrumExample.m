@@ -20,7 +20,7 @@ dlmwrite(filename_val, X_val, 'precision', '%.14f')
 
 for j = 1:3
 	seed = 2+j;
-	X_train = DiscreteSpectrumExampleFn(x1range, x2range, round(2^10), tSpan, mu, lambda, seed);
+	X_train = DiscreteSpectrumExampleFn(x1range, x2range, round(2^12), tSpan, mu, lambda, seed);
 	filename_train = strcat(filenamePrefix, sprintf('_train%d_x.csv',j));
 	dlmwrite(filename_train, X_train, 'precision', '%.14f')
 end

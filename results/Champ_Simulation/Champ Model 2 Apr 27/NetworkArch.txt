@@ -1,0 +1,32 @@
+desiredStates = ['lf_hip_joint_position', 'lf_hip_joint_vel', 'lf_upper_leg_joint_effort']
+
+input_dim = 3 | output_dim = 3
+enc layers: 5
+enc units [16,32,64,32,16], act:[tanh,tanh,tanh,tanh,tanh,tanh]
+Koopman Layer: 1 
+Koopman units: 16, act: None
+dec layers: 5
+dec units [32,64,32,16,3], act: [tanh,tanh,tanh,tanh,None]
+
+
+training paramters
+epochs: 9,000
+learning_rate: 0.0001
+
+Loss: alpha1 = 1e-1, alpha2 = 1e-7, alpha3 = 1e-15
+
+batch_size = 2**7
+trajectory_Length = 2**7
+NumTraj = 4
+NumTraj_batch = 1
+Num_batches = 4
+Num_batches_val = 1
+
+Data Preprocessing Params:
+filePath = "simData"
+fileNames = [filePath + '/plane_kp_100e10_kd_0/joint_state_test_plane_kp_100e10_kd_0_forward_0.1*']
+initialIndex, finalIndex= 200, 200+trajLength*(numTraj+numTraj_val)
+
+
+scaling for preprocess: 0 to 1
+

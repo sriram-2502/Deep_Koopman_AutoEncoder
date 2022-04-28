@@ -1,4 +1,4 @@
-# Deep_Koopman_AutoEncoder
+# Deep Koopman AutoEncoder
 DNN based Koopman autoencoder model
 
 

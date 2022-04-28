@@ -12,10 +12,10 @@ learning_rate: 0.0001
 Loss: alpha1 = 1, alpha2 = 1e-7, alpha3 = 1e-15
 
 trajLength = 64 #length of each trajectory in the dataset
-numTraj = 16 #total number of trajectories in the dataset
+numTraj = 12 #total number of trajectories in the dataset
 numTraj_val = 4
 batch_size = int(256) # Number of snapshots in each batch
-numTraj_batch = 4
+numTraj_batch = 3
 input_dim = 4
 
 num_batches_train = 4 ## num_batches = trajLength*numTraj/batch_size 

@@ -1,0 +1,22 @@
+enc layers: 7
+enc units [16,32,64,64,16,16,16], act:[tanh,tanh,tanh,tanh,tanh,tanh,tanh]
+Koopman Layer: 1 
+Koopman units: 16, act: None
+dec layers: 5
+dec units [64,64,32,64,2], act: [tanh,tanh,tanh,tanh,tanh]
+
+training paramters
+epochs: 10,000
+learning_rate: 0.0001
+
+Loss: alpha1 = 1, alpha2 = 1e-7, alpha3 = 1e-15
+
+batch_size = 32
+trajectory_Length = 25
+NumTraj = 32
+Num_batches = 25
+Num_batches_val = 6
+
+states used: theta, theta_dot, gamma, gamma_dot
+scaling for preprocess: 0 to 1
+

@@ -1,4 +1,4 @@
-desiredStates = ['lf_hip_joint_position', 'lf_hip_joint_vel', 'lf_upper_leg_joint_effort']
+desiredStates = ['lf_hip_joint_position', 'lf_hip_joint_vel', 'lf_hip_joint_effort']
 
 input_dim = 3 | output_dim = 3
 enc layers: 5
@@ -26,7 +26,6 @@ Data Preprocessing Params:
 filePath = "simData"
 fileNames = [filePath + '/plane_kp_100e10_kd_0/joint_state_test_plane_kp_100e10_kd_0_forward_0.1*']
 initialIndex, finalIndex= 200, 200+trajLength*(numTraj+numTraj_val)
-
 
 scaling for preprocess: 0 to 1
 

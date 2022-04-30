@@ -1,10 +1,10 @@
 input_dim = 3 | output_dim = 3
 enc layers: 7
-enc units [16,32,64,64,16,16,16], act:[tanh,tanh,tanh,tanh,tanh,tanh,tanh]
+enc units [16,32,64,64,16,16,16], act:[tanh,tanh,tanh,tanh,tanh,tanh,None]
 Koopman Layer: 1 
 Koopman units: 16, act: None
 dec layers: 5
-dec units [64,64,32,64,2], act: [tanh,tanh,tanh,tanh,tanh]
+dec units [64,64,32,64,2], act: [tanh,tanh,tanh,tanh,None]
 
 training paramters
 epochs: 9,000

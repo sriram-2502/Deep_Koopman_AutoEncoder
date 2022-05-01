@@ -1,0 +1,31 @@
+enc layers: 7
+enc units [16,32,64,64,16,16,16], act:[tanh,tanh,tanh,tanh,tanh,tanh,tanh]
+Koopman Layer: 1 
+Koopman units: 16, act: None
+dec layers: 5
+dec units [64,64,32,64,2], act: [tanh,tanh,tanh,tanh,tanh]
+
+training paramters
+epochs: 10,000
+learning_rate: 0.0001
+
+Loss: alpha1 = 1, alpha2 = 1e-7, alpha3 = 1e-15
+
+trajLength = 64 #length of each trajectory in the dataset
+
+numTraj_train = 16 #total number of trajectories in the dataset
+numTraj_val = 4
+numTraj_test = 304 
+
+batch_size = int(256) # Number of snapshots in each batch
+numTraj_batch = 4
+input_dim = 4
+
+
+
+num_batches_train = 4 ## num_batches = trajLength*numTraj/batch_size 
+num_batches_val = 1
+
+states used: theta, theta_dot, gamma, gamma_dot
+scaling for preprocess: 0 to 1
+

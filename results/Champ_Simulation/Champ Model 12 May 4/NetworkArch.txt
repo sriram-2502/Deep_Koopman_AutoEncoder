@@ -10,7 +10,7 @@ dec units [64,64,32,64,2], act: [elu,elu,tanh,tanh,None]
 
 training paramters
 epochs: 10,000
-learning_rate: 5e-5
+learning_rate: 1e-4
 
 Loss: alpha1 = 1e-1, alpha2 = 1e-7, alpha3 = 1e-15
 

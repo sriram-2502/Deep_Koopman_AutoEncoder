@@ -1,0 +1,60 @@
+input_dim = 6 | output_dim = 6
+enc layers: 7
+enc units [128,128,128,128,128,128,128], act:[tanh,elu,tanh,elu,tanh,elu,tanh]
+Koopman Layer: 1 
+Koopman units: 256, act: None
+dec layers: 5
+dec units [128,128,128,128,6], act: [elu,elu,tanh,tanh,None]
+
+training paramters
+epochs: 150
+learning_rate: 1e-5
+
+Loss: alpha1 = 1e-1, alpha2 = 1e-7, alpha3 = 1e-15
+
+
+############################################################
+desiredStates = ['lf_hip_joint_position', 'lf_hip_joint_vel', 'lf_lower_leg_joint_position', 
+                'lf_lower_leg_joint_vel', 'lf_hip_joint_effort', 'lf_lower_leg_joint_effort']
+
+input_dim = len(desiredStates)
+output_dim = input_dim
+
+trajLength = 2**6 # Length of each trajectory in the dataset
+
+filePath = "simData"
+fileNames = [filePath + '/empty_world_ground_2/joint_state_test_emptyWorld_forward_0.5*']
+
+
+numTraj = 256 # Total number of trajectories in the dataset (train)
+numTraj_val = 32
+numTraj_test = 32
+batch_size = int(2**8) # Number of snapshots in each batch
+numTraj_batch = int(batch_size/trajLength)
+numTraj_batch = int(batch_size/trajLength)
+
+initialIndex, finalIndex= 400, 400+trajLength*(numTraj+numTraj_val+numTraj_test)
+
+num_batches_train = int(trajLength*numTraj/batch_size) ## num_batches = trajLength*numTraj/batch_size 
+num_batches_val = int(trajLength*numTraj_val/batch_size)
+
+
+
+#############################################################
+
+Data Preprocessing Params:
+filePath = "simData"
+fileNames = [filePath + '/plane_kp_100e10_kd_0/joint_state_test_plane_kp_100e10_kd_0_forward_0.1*']
+initialIndex, finalIndex= 200, 200+trajLength*(numTraj+numTraj_val)
+
+scaling for preprocess: None
+
+Loss Factor:
+alpha1 = 0.1
+alpha2 = 1e-7
+alpha3 = 1e-15 
+
+Results (Lin Pred):
+-------------
+1) test_traj_linPred_lf_hip_joint_effort
+2) test_traj_linPred_lf_hip_joint_position

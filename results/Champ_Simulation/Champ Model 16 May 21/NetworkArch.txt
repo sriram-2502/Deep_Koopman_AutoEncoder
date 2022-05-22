@@ -1,15 +1,15 @@
 desiredStates = ['lf_hip_joint_position', 'lf_hip_joint_vel', 'lf_hip_joint_effort']
 
-input_dim = 3 | output_dim = 3
+input_dim = 6 | output_dim = 6
 enc layers: 7
-enc units [256,256,256,256,256,256,256], act:[tanh,elu,tanh,elu,tanh,elu,tanh]
+enc units [128,128,128,128,128,128,128], act:[tanh,elu,tanh,elu,tanh,elu,tanh]
 Koopman Layer: 1 
 Koopman units: 256, act: None
 dec layers: 5
-dec units [256,256,256,256,256], act: [elu,elu,tanh,tanh,None]
+dec units [128,128,128,128,6], act: [elu,elu,tanh,tanh,None]
 
 training paramters
-epochs: 10,000
+epochs: 750
 learning_rate: 5e-5
 
 Loss: alpha1 = 1e-1, alpha2 = 1e-7, alpha3 = 1e-15

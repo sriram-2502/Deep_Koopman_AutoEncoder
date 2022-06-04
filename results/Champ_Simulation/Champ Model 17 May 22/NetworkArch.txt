@@ -3,11 +3,11 @@ enc units [256,256,256,256,256,256,256], act:[tanh,tanh,tanh,tanh,tanh,tanh,tanh
 Koopman Layer: 1 
 Koopman units: 256, act: None
 dec layers: 5
-dec units [256,256,256,256,256], act: [tanh,tanh,tanh,tanh,None]
+dec units [256,256,256,256,6], act: [tanh,tanh,tanh,tanh,None]
 
 training paramters
-epochs: 10,000
-learning_rate: 5e-5
+epochs: 400
+learning_rate: 1e-4
 
 Loss: alpha1 = 1e-1, alpha2 = 1e-7, alpha3 = 1e-15
 

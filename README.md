@@ -1,5 +1,5 @@
 # Deep Koopman AutoEncoder
-DNN based Koopman autoencoder model
+DNN based Koopman autoencoder model (Project report [https://github.com/sriram-2502/Deep_Koopman_AutoEncoder/blob/main/AuE8930_Koopman_Autoencoder_Project%20(1).pdf])
 
 
 Future work will extend this architecture to approximate the principle eigenfunction coordinate transformation as the encoder network.

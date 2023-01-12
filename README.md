@@ -8,6 +8,7 @@ Theses setups were ran in anaconda with VS code with jupyter notebook. Note, thi
 <br>
 Clone the repository
 Note: Repository may be quite large as results/ directory has results that contains the deep learning model and the images and graphs of the results
+<br>
 Remarks:
 - Knowledge of the local linear eigenvalues can be exploited and impose a soft constraint on the learned basis function. 
 - Its easy to see how this framework makes it possible to impose combinations of constraints through the loss function. 

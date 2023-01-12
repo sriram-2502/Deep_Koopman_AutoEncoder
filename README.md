@@ -8,7 +8,11 @@ Theses setups were ran in anaconda with VS code with jupyter notebook. Note, thi
 <br>
 Clone the repository
 Note: Repository may be quite large as results/ directory has results that contains the deep learning model and the images and graphs of the results
-
+Remarks:
+- Knowledge of the local linear eigenvalues can be exploited and impose a soft constraint on the learned basis function. 
+- Its easy to see how this framework makes it possible to impose combinations of constraints through the loss function. 
+- The tanh activation function is an example of an analytical function which satisfies the necessary gradient constraints at the origin.
+- F
 ```
 git clone https://github.com/sriram-2502/Deep_Koopman_AutoEncoder.git
 ```
@@ -33,11 +37,7 @@ cd <github repo>
 mkdir <new_name_for_dataset_dir>
 cp Custom_Koopman_AE_Doggo.ipynb load_model.ipynb <new_name_for_dataset_dir>/
 ```
-Remarks
-- Knowledge of the local linear eigenvalues can be exploited and impose a soft constraint on the learned basis function. 
-- Its easy to see how this framework makes it possible to impose combinations of constraints through the loss function. 
-- The tanh activation function is an example of an analytical function which satisfies the necessary gradient constraints at the origin.
-- Future work will extend this architecture to approximate the principle eigenfunction coordinate transformation as the encoder network.
+uture work will extend this architecture to approximate the principle eigenfunction coordinate transformation as the encoder network.
 
 
 # Stanford Doggo Workflow 

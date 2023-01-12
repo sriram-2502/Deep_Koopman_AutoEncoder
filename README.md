@@ -43,4 +43,4 @@ uture work will extend this architecture to approximate the principle eigenfunct
 
 # Stanford Doggo Workflow 
 Stanford doggo consist of running mulch, rigid ground, and pebbles experiment. (Note, I believe this data has already been preprocessed as it looks too smooth to note be preprocessed, but Dakota has stated that it should not be preprocessed). Currently Doggo/ directory may contain corrupted .ipynb files. Instead copy directory of one of the Doggo experiments in the /Results directory and start training dataset. Currently, for Doggo, dataset is compiled into a csv file... One csv file should contain multiple trajectories of the experiment. Preprocessing data should have multiple trajectories with the same length...
-# Champ
+

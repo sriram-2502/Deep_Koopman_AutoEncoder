@@ -1,18 +1,7 @@
 # Deep Koopman AutoEncoder
 DNN based Koopman autoencoder model [Project report](https://github.com/sriram-2502/Deep_Koopman_AutoEncoder/blob/main/AuE8930_Koopman_Autoencoder_Project%20(1).pdf)
 
-
-Future work will extend this architecture to approximate the principle eigenfunction coordinate transformation as the encoder network.
-
-Knowledge of the local linear eigenvalues can be exploited and impose a soft constraint on the learned basis function. 
-Its easy to see how this framework makes it possible to impose combinations of constraints through the loss function. 
-
-
-The tanh activation function is an example of an analytical function which satisfies the necessary gradient constraints at the origin.
-
-
 ![alt text](./images/NetworkArch.png)
-
 
 # Setup 
 Theses setups were ran in anaconda with VS code with jupyter notebook. Note, this should also be able to run in a typical jupyter notebook or google colab environment but has not been verified.
@@ -44,6 +33,13 @@ cd <github repo>
 mkdir <new_name_for_dataset_dir>
 cp Custom_Koopman_AE_Doggo.ipynb load_model.ipynb <new_name_for_dataset_dir>/
 ```
+Remarks
+- Knowledge of the local linear eigenvalues can be exploited and impose a soft constraint on the learned basis function. 
+- Its easy to see how this framework makes it possible to impose combinations of constraints through the loss function. 
+- The tanh activation function is an example of an analytical function which satisfies the necessary gradient constraints at the origin.
+- Future work will extend this architecture to approximate the principle eigenfunction coordinate transformation as the encoder network.
+
+
 # Stanford Doggo Workflow 
 Stanford doggo consist of running mulch, rigid ground, and pebbles experiment. (Note, I believe this data has already been preprocessed as it looks too smooth to note be preprocessed, but Dakota has stated that it should not be preprocessed). Currently Doggo/ directory may contain corrupted .ipynb files. Instead copy directory of one of the Doggo experiments in the /Results directory and start training dataset. Currently, for Doggo, dataset is compiled into a csv file... One csv file should contain multiple trajectories of the experiment. Preprocessing data should have multiple trajectories with the same length...
 # Champ
